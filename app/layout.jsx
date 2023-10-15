@@ -22,7 +22,7 @@ const cormorant = Cormorant({
 
 export const metadata = {
   title: 'Avatar Bmb',
-  description: 'Portfolio website for Avatar Bmb',
+  description: 'Portfolio website for a graphics designer',
 }
 
 export default function RootLayout({ children }) {
