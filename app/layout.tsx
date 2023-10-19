@@ -1,8 +1,7 @@
-import '@styles/globals.css'
-import { Lato, Montserrat, Cormorant } from 'next/font/google'
-import Nav from '@components/Nav'
-import { createClient } from '@prismicio'
-import { Metadata } from 'next'
+import '@styles/globals.css';
+import { Lato, Montserrat, Cormorant } from 'next/font/google';
+import { createClient } from '@prismicio';
+import { Metadata } from 'next';
 
 const lato = Lato({
   subsets: ['latin'],
@@ -24,26 +23,25 @@ const cormorant = Cormorant({
 })
 
 export async function generateMetadata(): Promise<Metadata> {
-  const client = createClient()
+  const client = createClient();
 
-  const page = await client.getSingle("settings")
+  const settings = await client.getSingle("settings");
  
   return {
-    title: page.data.site_title || "Avatar Bmb",
-    description: page.data.meta_description || "A portfolio website for a graphics designer",
+    title: settings.data.site_title || "Avatar Bmb",
+    description: settings.data.meta_description || "A portfolio website for a graphics designer",
     openGraph: {
-      images: [page.data.og_image.url || ""],
+      images: [settings.data.og_image.url || ""],
     },
-  }
+  };
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${lato.variable} ${mont.variable} ${cormorant.variable}`}>
-          <Nav />
+    <html lang="en" className={`${lato.variable} ${mont.variable} ${cormorant.variable}`}>
+      <body>
         {children}
         </body>
     </html>
-  )
+  );
 }

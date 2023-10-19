@@ -1,0 +1,51 @@
+.hero {
+    @apply w-full -z-50 relative h-screen overflow-hidden
+}
+
+.hero__cont {
+    @apply w-full h-full flex flex-col justify-between fixed top-0 right-0 left-0 px-5 sm:px-10 lg:px-20 py-5 sm:pt-10 sm:pb-0 lg:pt-20
+}
+
+.line {
+    @apply w-full h-1 bg-white rounded-xl my-5
+}
+
+.wrapper {
+    @apply w-full h-[70%] flex flex-col gap-4 justify-between sm:flex-row sm:h-[65%] lg:h-[75%]
+}
+
+.text {
+    @apply w-full h-full flex flex-col justify-end sm:w-[30%]
+}
+
+.heading {
+    @apply text-3xl font-lato sm:text-4xl xl:text-6xl
+}
+
+.images {
+    @apply w-full h-full sm:flex flex-row sm:overflow-hidden sm:items-end gap-6 sm:w-[70%]
+}
+
+.image__right {
+    @apply w-full h-full hidden xl:flex
+}
+
+.image__left {
+    @apply w-full h-full
+}
+
+.image {
+    @apply w-full h-full sm:w-[500px] sm:h-[550px]
+}
+
+.skill {
+    @apply w-full h-[29%] flex gap-2 flex-col sm:justify-between sm:flex-row sm:gap-6 sm:h-[35%] lg:h-[25%]
+}
+
+.title {
+    @apply font-lato w-full sm:w-[50%]
+}
+
+.paragraph {
+    @apply font-mont text-sm w-full sm:w-[50%] sm:text-base
+}

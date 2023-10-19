@@ -1,0 +1,25 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading4",
+						"content": {
+							"text": "Blanket"
+						}
+					}
+				]
+			},
+			"descriptiontext": {
+				"__TYPE__": "FieldContent",
+				"value": "string",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

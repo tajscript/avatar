@@ -1,0 +1,44 @@
+{
+  "id": "art",
+  "type": "SharedSlice",
+  "name": "Art",
+  "description": "Art",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading4,strong"
+          }
+        }
+      },
+      "items": {
+        "number": {
+          "type": "Text",
+          "config": {
+            "label": "Number",
+            "placeholder": ""
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.about {
+    @apply py-10 sm:py-20 w-full h-full z-50 bg-white text-black rounded-t-3xl
+}
+
+.container {
+    @apply w-full h-full flex flex-row gap-2 sm:gap-6
+}
+
+.heading {
+    @apply w-[10%]
+}
+
+.description {
+    @apply w-[90%]
+}

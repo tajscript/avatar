@@ -1,0 +1,60 @@
+{
+  "id": "hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "Hero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,strong"
+          }
+        },
+        "mobileimage": {
+          "type": "Image",
+          "config": {
+            "label": "MobileImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "desktopimage": {
+          "type": "Image",
+          "config": {
+            "label": "DesktopImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "skilltext": {
+          "type": "Text",
+          "config": {
+            "label": "SkillText",
+            "placeholder": ""
+          }
+        },
+        "skilldescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "SkillDescription",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
