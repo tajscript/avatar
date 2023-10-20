@@ -1,5 +1,5 @@
 .about {
-    @apply py-10 sm:py-20 w-full h-full z-50 bg-white text-black rounded-t-3xl
+    @apply py-10 my-10 relative sm:py-20 w-full h-full z-50 bg-white text-black rounded-t-3xl
 }
 
 .container {
@@ -7,7 +7,7 @@
 }
 
 .heading {
-    @apply w-[10%]
+    @apply w-[10%] sticky top-0
 }
 
 .description {

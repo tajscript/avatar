@@ -20,6 +20,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
       className={Styles.hero}
     >
 
+      <div className={Styles.container}>
       <div className={Styles.hero__cont}>
       <div className={Styles.wrapper}>
       <div className={Styles.text}>
@@ -54,6 +55,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
       />
       </div>
 
+      </div>
       </div>
     </section>
   );
