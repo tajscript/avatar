@@ -11,5 +11,5 @@ html {
 }
 
 body {
-    @apply bg-black w-full h-full text-white
+    @apply text-white bg-black
 }

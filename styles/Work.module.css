@@ -1,0 +1,39 @@
+.work {
+    @apply w-full relative h-full z-50 bg-inherit py-20 px-5 sm:px-10 lg:px-20
+}
+
+.heading {
+    @apply font-cormorant text-center font-bold text-3xl mb-20 sm:text-5xl
+}
+
+.container {
+    @apply w-full h-full flex flex-col gap-20
+}
+
+.wrapper {
+    @apply w-full h-full gap-1 flex flex-row last-of-type:flex-row-reverse first-of-type:flex-row-reverse sm:flex-col sm:first-of-type:flex-col sm:last-of-type:flex-col sm:gap-6 xl:flex-row xl:gap-20 xl:first-of-type:flex-row-reverse xl:last-of-type:flex-row-reverse
+}
+
+.title__wrapper {
+    @apply w-[30%] sm:w-full xl:w-[30%]
+}
+
+.title {
+    @apply font-cormorant text-sm sm:text-lg sm:mb-2
+}
+
+.paragraph {
+    @apply hidden font-mont sm:flex
+}
+
+.images {
+    @apply w-[70%] sm:w-full xl:w-[70%]
+}
+
+.image__container {
+    @apply w-full h-full flex flex-col justify-center items-center gap-2 sm:flex-row
+}
+
+.image {
+    @apply w-full h-full sm:w-[220px] sm:h-[170px] lg:w-[300px] lg:h-[230px]
+}

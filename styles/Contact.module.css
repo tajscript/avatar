@@ -1,0 +1,19 @@
+.contact {
+    @apply w-full h-full text-gray-500 bg-inherit pt-20 pb-5 px-5 sm:px-10 sm:pt-32 lg:px-20
+}
+
+.container {
+    @apply w-full h-full mb-10 flex gap-4 flex-col justify-between sm:flex-row
+}
+
+.heading {
+    @apply font-lato sm:text-lg lg:text-2xl
+}
+
+.credit {
+    @apply text-center text-xs font-mont sm:text-sm lg:text-base
+}
+
+.link {
+    @apply pl-1 underline underline-offset-4 font-cormorant text-base text-white lg:text-xl
+}

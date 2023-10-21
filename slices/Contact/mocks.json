@@ -8,15 +8,16 @@
 				"value": "down",
 				"type": "Text"
 			},
-			"details": {
-				"__TYPE__": "FieldContent",
-				"value": "map",
-				"type": "Text"
-			},
 			"contact": {
-				"__TYPE__": "FieldContent",
-				"value": "quietly",
-				"type": "Text"
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Minim cupidatat laboris mollit id officia elit ullamco sit Lorem deserunt ad incididunt. Dolor laboris aliqua non amet amet dolore irure Lorem elit nostrud esse deserunt sunt ipsum labore. Cupidatat nisi non et occaecat elit id veniam dolor amet dolore duis occaecat."
+						}
+					}
+				]
 			},
 			"credit": {
 				"__TYPE__": "FieldContent",

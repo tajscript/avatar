@@ -1,6 +1,8 @@
 import { Content } from "@prismicio/client";
 import { PrismicNextLink } from "@prismicio/next";
-import { SliceComponentProps } from "@prismicio/react";
+import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
+
+import Styles from "@styles/Contact.module.css";
 
 /**
  * Props for `Contact`.
@@ -15,14 +17,26 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      className={Styles.contact}
     >
+      <div className={Styles.container}>
+      <div className={Styles.heading}>
       <>{slice.primary.thanks}</>
-      <>{slice.primary.contact}</>
-      <>{slice.primary.details}</>
+      </div>
+
+      <div className={Styles.heading}>
+      <PrismicRichText field={slice.primary.contact} />
+      </div>
+
+      </div>
+      
+      <div className={Styles.credit}>
       <>{slice.primary.credit}</>
-      <PrismicNextLink field={slice.primary.link}>
+
+      <PrismicNextLink field={slice.primary.link} className={Styles.link}>
       <>{slice.primary.linktext}</>
       </PrismicNextLink>
+      </div>
       
     </section>
   );

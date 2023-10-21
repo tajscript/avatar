@@ -1,15 +1,15 @@
 .about {
-    @apply py-10 my-10 relative sm:py-20 w-full h-full z-50 bg-white text-black rounded-t-3xl
+    @apply px-5 py-20 relative w-full h-screen z-20 bg-white text-black rounded-t-3xl sm:px-10 lg:px-20
 }
 
 .container {
-    @apply w-full h-full flex flex-row gap-2 sm:gap-6
+    @apply w-full h-full flex flex-col justify-center
 }
 
 .heading {
-    @apply w-[10%] sticky top-0
+    @apply font-cormorant text-center font-bold text-3xl mb-4 sm:text-5xl
 }
 
 .description {
-    @apply w-[90%]
+    @apply font-mont text-left sm:text-lg
 }

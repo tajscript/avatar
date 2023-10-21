@@ -20,17 +20,12 @@
           }
         },
         "contact": {
-          "type": "Text",
+          "type": "StructuredText",
           "config": {
             "label": "Contact",
-            "placeholder": ""
-          }
-        },
-        "details": {
-          "type": "Text",
-          "config": {
-            "label": "Details",
-            "placeholder": ""
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em"
           }
         },
         "credit": {

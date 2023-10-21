@@ -1,7 +1,13 @@
+"use client"
+
 import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import Styles from "@styles/Hero.module.css";
+import { useRef, useLayoutEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
 
 
 /**
@@ -13,8 +19,23 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>;
  * Component for "Hero" Slices.
  */
 const Hero = ({ slice }: HeroProps): JSX.Element => {
+  const artRef = useRef<HTMLDivElement | null>();
+
+  useLayoutEffect(() => {
+
+    let hero = gsap.context(() => {
+      gsap.to(artRef.current, {duration: 1.5, opacity: 1})
+    })
+
+    return () => {
+        hero.revert();
+    }
+
+    }, [])
+
   return (
     <section
+      ref={artRef}
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       className={Styles.hero}

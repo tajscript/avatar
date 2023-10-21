@@ -279,22 +279,12 @@ export interface ContactSliceDefaultPrimary {
   /**
    * Contact field in *Contact → Primary*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
    * - **API ID Path**: contact.primary.contact
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  contact: prismic.KeyTextField;
-
-  /**
-   * Details field in *Contact → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: contact.primary.details
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  details: prismic.KeyTextField;
+  contact: prismic.RichTextField;
 
   /**
    * Credit field in *Contact → Primary*

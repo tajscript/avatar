@@ -1,0 +1,31 @@
+.art {
+    @apply w-full overflow-hidden relative h-full z-50 bg-inherit py-20 px-5 sm:px-10 lg:px-20
+}
+
+.heading {
+    @apply w-full h-full text-[10rem] font-cormorant text-center rotate-90 mb-20 uppercase sm:text-[15rem]
+}
+
+.art__wrapper {
+    @apply w-full h-full pt-20 gap-6 flex flex-col justify-center items-center sm:gap-10 xl:flex-row
+}
+
+.wrapper {
+    @apply w-[90%] h-full sm:w-[80%] lg:w-full
+}
+
+.title {
+    @apply font-cormorant text-2xl mb-1 sm:text-3xl
+}
+
+.image__wrapper {
+    @apply w-full h-full relative
+}
+
+.image {
+    @apply w-[300px] h-[300px] sm:w-[450px] sm:h-[430px] xl:w-[400px] xl:h-[400px]
+}
+
+.image__border {
+    @apply absolute w-[300px] h-[300px] sm:w-[450px] sm:h-[430px] xl:w-[400px] xl:h-[400px] -z-20 border-2 top-4 left-4 sm:top-5 sm:left-5 border-gray-500
+}
