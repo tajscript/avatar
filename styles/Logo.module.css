@@ -1,5 +1,5 @@
 .logo {
-    @apply bg-white w-full h-full z-50 relative
+    @apply bg-transparent w-full h-full z-50 relative
 }
 
 .logo__wrapper {
@@ -7,7 +7,7 @@
 }
 
 .heading {
-    @apply font-cormorant text-center font-bold text-3xl mb-20 sm:text-5xl
+    @apply relative w-full h-auto text-[6rem] font-cormorant text-center rotate-90 uppercase mb-20 py-20 sm:text-[8rem] sm:mb-32
 }
 
 .container {

@@ -19,12 +19,13 @@ export type AboutProps = SliceComponentProps<Content.AboutSlice>;
  */
 const About = ({ slice }: AboutProps): JSX.Element => {
   const aboutRef = useRef<HTMLDivElement | null>();
+  const aboutTextRef = useRef<HTMLDivElement | null>();
 
   useLayoutEffect(() => {
 
     let about = gsap.context(() => {
       gsap.to(aboutRef.current, {
-        ease: "none",
+        ease: "sine.in",
         duration: 1.5,
         delay: 0.5,
         scrollTrigger: {
@@ -35,6 +36,18 @@ const About = ({ slice }: AboutProps): JSX.Element => {
           pin: true,
           pinSpacing: false,
           toggleActions: 'play reverse play reverse',
+          scrub: 2
+      }
+      })
+
+      gsap.from(aboutTextRef.current, {
+        ease: "circ",
+        duration: 1.0,
+        yPercent: 150,
+        scrollTrigger: {
+          trigger: aboutRef.current,
+          start: "top bottom",
+          end: "top top",
           scrub: 2
       }
       })
@@ -53,7 +66,7 @@ const About = ({ slice }: AboutProps): JSX.Element => {
       data-slice-variation={slice.variation}
       className={Styles.about}
     >
-      <div className={Styles.container}>
+      <div className={Styles.container} ref={aboutTextRef}>
       <div className={Styles.heading}>
       <PrismicRichText field={slice.primary.heading} />
       </div>

@@ -24,7 +24,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
   useLayoutEffect(() => {
 
     let hero = gsap.context(() => {
-      gsap.to(artRef.current, {duration: 1.5, opacity: 1})
+      gsap.to(artRef.current, {opacity: 1, duration: 1.5,ease: "sine"})
     })
 
     return () => {

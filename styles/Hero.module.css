@@ -1,5 +1,5 @@
 .hero {
-    @apply w-full -z-50 relative h-screen overflow-hidden bg-inherit opacity-0
+    @apply w-full opacity-0 -z-50 relative h-screen overflow-hidden bg-inherit
 }
 
 .container {
